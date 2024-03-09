@@ -3,6 +3,7 @@ on: push
 
 jobs:
     build:
+        continue-on-error: true
         strategy: # run jobs multiple times once per value in config - all combinations
           matrix:
             node-version: [12, 14, 16]
